@@ -6,8 +6,13 @@ My versions:
     - django Version 5.1.2
 
 I've used python venv (virtual environment) for the assessment.
+
+To install venv, just type python -m venv .venv
+
 To activate venv, just type .venv\Scripts\Activate.ps1 to the
 Powershell Terminal
+
+To install django and djangorestframework, just type pip install django and pip install djangorestframework
 
 -----------------------------
 
