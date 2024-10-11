@@ -14,6 +14,8 @@ Powershell Terminal
 
 To install django and djangorestframework, just type pip install django and pip install djangorestframework
 
+There is a file name test.rest, to use it, Download "REST Client" from VSCode Extensions. Make sure to start the virtual environment first before using test.rest
+
 -----------------------------
 
 # Type python manage.py createsuperuser to create a super user account
