@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import Tasks, ViewTask
+from . import views
+from .views import ViewTask, FilterTask
 
 urlpatterns = [
-    path('', Tasks.as_view(), name='task'),
-    path('<int:id>/', ViewTask.as_view(), name="view-task"),
+    path('<int:id>/', ViewTask.as_view()),
+    path('', FilterTask)
 ]
