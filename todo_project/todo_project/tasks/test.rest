@@ -1,0 +1,45 @@
+###
+#Filter for Today
+GET http://127.0.0.1:8000/tasks/?status=today
+Content-Type: application/json
+
+###
+#Filter for Overdue
+GET http://127.0.0.1:8000/tasks/?status=overdue
+Content-Type: application/json
+
+###
+#Filter for Incoming
+GET http://127.0.0.1:8000/tasks/?status=incoming
+Content-Type: application/json
+
+####################################################
+
+#Post some content
+POST http://127.0.0.1:8000/
+Content-Type: application/json
+
+{
+    "title": "DO SOME STUFF",
+    "description": "",
+    "due_date": "2024-10-12"
+}
+
+###
+#Get all data
+GET http://127.0.0.1:8000/
+Content-Type: application/json
+
+{
+    "title": "",
+    "description": "",
+    "due_date": null
+}
+
+###
+#Get specific data (change number to any number)
+GET http://127.0.0.1:8000/tasks/2/
+Content-Type: application/json
+
+
+
